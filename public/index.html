@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="styles.css">
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         li {
             list-style-type: none;
         }
@@ -15,21 +18,24 @@
 </head>
 
 <body>
-    <nav class="bg-black text-white h-20 p-5">
-        <div class="flex">
-            <a href="" class="mx-5">About WAEJUC</a>
-            <a href="" class="mx-5">Timeline</a>
-            <a href="" class="mx-5">Application</a>
+    <nav class="bg-white text-blue-600 h-20 p-5 flex relative md:block hidden">
+        <div class="absolute left-24">
+            wadidaw
+        </div>
+        <div class="absolute right-32">
+            <a href="#About" class="mx-5">About WAEJUC</a>
+            <a href="#Timeline" class="mx-5">Timeline</a>
+            <a href="#Application" class="mx-5">Application</a>
         </div>
     </nav>
 
-    <section class="h-screen">
+    <section class="h-screen" id="About">
         <h1>About WAEJUC</h1>
     </section>
-    <section class="h-screen bg-red">
+    <section class="h-screen bg-red" id="Timeline">
         <h1>Timeline</h1>
     </section>
-    <section class="h-screen bg-yellow">
+    <section class="h-screen bg-yellow" id="Application">
         <h1>Application</h1>
     </section>
 
@@ -37,5 +43,5 @@
         <p class="text-white">xixixi</p>
     </footer>
 </body>
-
+<script src="index.js"></script>
 </html>
