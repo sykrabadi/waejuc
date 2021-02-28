@@ -8,34 +8,73 @@
 
     <link rel="stylesheet" href="styles.css">
     <style>
-        html{
+        html {
             scroll-behavior: smooth;
         }
+
         li {
             list-style-type: none;
+        }
+
+        main>nav {
+            position: sticky;
         }
     </style>
 </head>
 
 <body>
-    <nav class="bg-white text-blue-600 h-20 p-5 flex relative md:block hidden">
+    <nav class="bg-white text-blue-600 h-24 p-5 flex relative  shadow-md">
         <div class="absolute left-24">
-            wadidaw
+            <img src="../src/Lambang-UM.png" alt="" class="w-16">
         </div>
-        <div class="absolute right-32">
+        <div class="absolute right-32 md:block hidden py-3">
             <a href="#About" class="mx-5">About WAEJUC</a>
             <a href="#Timeline" class="mx-5">Timeline</a>
             <a href="#Application" class="mx-5">Application</a>
         </div>
     </nav>
 
-    <section class="h-screen" id="About">
-        <h1>About WAEJUC</h1>
+    <section class="h-screen p-8 bg-blue-700 overflow-visible" id="About">
+        <h1 class="text-xl md:text-3xl">About WAEJUC</h1>
+        <div class="grid md:grid-cols-2 grid-cols-1 h-5/6 mt-4">
+            <div class="border-white border-2">
+
+            </div>
+            <div class="border-white border-2 text-justify p-5">
+                <p>
+                    UniversitasNegeri Malang invites you to participate in the International Enrichment Program –
+                    Western
+                    Australia East Java University Consortium (WAEJUC) in Perth, Australia which will be held on
+                    September 1 – 8, 2019. The host universities are The University of Notre Dame,
+                    The University of Western Australia, Curtin University, Edith Cowan University and Murdoch
+                    University.
+                    WAEJUC International Enrichment Program combines Academic study with cultural excursions to iconic
+                    Perth locations.
+                    This Program includes Academic, Social and Cultural Component as follows
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        <span class="font-bold">Academic Component:</span> Includes specialist lectures and interactive
+                        workshops at the five Western
+                        Australian universities.
+                    </li>
+                    <br>
+                    <li>
+                        <span class="font-bold">Social and Cultural Component:</span>  A specially designed social and cultural program showcases the
+                        best of Perth and provides opportunities to interact with Western Australian university
+                        students.
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
-    <section class="h-screen bg-red" id="Timeline">
+
+    <section class="h-screen p-12" id="Timeline">
         <h1>Timeline</h1>
     </section>
-    <section class="h-screen bg-yellow" id="Application">
+
+    <section class="h-screen p-12" id="Application">
         <h1>Application</h1>
     </section>
 
@@ -44,4 +83,5 @@
     </footer>
 </body>
 <script src="index.js"></script>
+
 </html>
